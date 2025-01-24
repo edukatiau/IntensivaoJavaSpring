@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.rigon</groupId>
 	<artifactId>dslist</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>v1</version>
 	<name>dslist</name>
 	<description>Intensivão Java Spring</description>
 	<url/>
