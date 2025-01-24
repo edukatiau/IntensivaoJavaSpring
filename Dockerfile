@@ -1,11 +1,14 @@
 # Estágio 1: Build
 FROM ubuntu:latest AS build
 
-# Instalação do JDK
+# Atualiza pacotes e instala o JDK
 RUN apt-get update && apt-get install openjdk-21-jdk -y
 
 # Copia o código-fonte para o container
 COPY . .
+
+# Dá permissão de execução ao Maven wrapper
+RUN chmod +x mvnw
 
 # Executa o Maven para empacotar a aplicação
 RUN ./mvnw package
